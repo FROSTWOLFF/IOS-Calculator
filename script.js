@@ -12,7 +12,7 @@ const getKeyType = key => {
   if (!action) return 'number';
   if (action === 'add' || action === 'subtract' || action === 'multiply' || action === 'divide')
     return 'operator';
-  // For everything else, return the action
+  // For everything else, return the initial action
   return action;
 };
 
